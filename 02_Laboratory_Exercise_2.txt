@@ -1,0 +1,27 @@
+using System;
+
+namespace ConsoleApp1
+{
+    class HelloWorld
+    {
+        static void Main(string[] args)
+        {
+        
+        int gr1, gr2, gr3, gr4, gr5;
+        double average;
+        
+        Console.WriteLine("Enter 5 grades separated by new line: ");
+        gr1 = Convert.ToInt16(Console.ReadLine());
+        gr2 = Convert.ToInt16(Console.ReadLine());
+        gr3 = Convert.ToInt16(Console.ReadLine());
+        gr4 = Convert.ToInt16(Console.ReadLine());
+        gr5 = Convert.ToInt16(Console.ReadLine());
+        average = ((double)gr1 + (double)gr2 + (double)gr3 + (double)gr4 + (double)gr5) / 5;
+        Console.WriteLine("The average is " + average + " and round off to " + Math.Round(average));
+        
+        Console.Write("\nPress any key to exit...");
+        Console.ReadKey();
+
+        }
+    }
+}
